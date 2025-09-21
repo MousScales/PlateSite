@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plates - Fitness & Meal Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="IMG_8102.JPG" alt="Plates Logo" class="nav-logo-image">
+                    <span class="logo-text">Plates</span>
+                </div>
+                <div class="nav-buttons">
+                    <button class="download-btn">Download</button>
+                    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                        <svg class="theme-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Plates</h1>
+                    <p class="hero-subtitle">Fitness & Meal Tracker</p>
+                    <h2 class="hero-tagline">Track your workouts<br>and meals in one app</h2>
+                    <button class="app-store-btn">
+                        <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        Download on the App Store
+                    </button>
+                </div>
+                
+                <div class="hero-phone">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-logo-container">
+                                <h1 class="phone-app-title" id="typingText">Plates</h1>
+                                <img src="IMG_8102.JPG" alt="Plates App Logo" class="app-logo-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="features-title">Everything you need to track fitness and meals</h2>
+            
+            <!-- Flip Toggle Button -->
+            <div class="flip-toggle-container">
+                <button class="flip-toggle" id="flipToggle">
+                    <div class="flip-toggle-content">
+                        <img src="IMG_8103.JPG" alt="Fitness Mode" class="flip-toggle-image" id="flipToggleImage">
+                        <span class="flip-toggle-text" id="flipToggleText">Fitness Mode</span>
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Flipable Content -->
+            <div class="flip-container">
+                <div class="flip-card" id="flipCard">
+                    <!-- Fitness Side -->
+                    <div class="flip-side fitness-side">
+                        <div class="flip-image-container">
+                            <img src="IMG_8104.JPG" alt="Fitness Tracking" class="flip-main-image">
+                        </div>
+                        <div class="flip-content">
+                            <h3 class="flip-title">Fitness Tracking</h3>
+                            <p class="flip-description">Log your workouts, track your progress, and achieve your fitness goals with comprehensive workout tracking.</p>
+                            <div class="flip-features">
+                                <div class="flip-feature">
+                                    <div class="flip-feature-icon">🏋️</div>
+                                    <span>Workout Logging</span>
+                                </div>
+                                <div class="flip-feature">
+                                    <div class="flip-feature-icon">📊</div>
+                                    <span>Progress Charts</span>
+                                </div>
+                                <div class="flip-feature">
+                                    <div class="flip-feature-icon">💪</div>
+                                    <span>Strength Training</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Meals Side -->
+                    <div class="flip-side meals-side">
+                        <div class="flip-image-container">
+                            <img src="IMG_8103.JPG" alt="Meal Tracking" class="flip-main-image">
+                        </div>
+                        <div class="flip-content">
+                            <h3 class="flip-title">Meal Tracking</h3>
+                            <p class="flip-description">Track your daily meals, monitor calories, and maintain a balanced diet with our comprehensive nutrition tracking.</p>
+                            <div class="flip-features">
+                                <div class="flip-feature">
+                                    <div class="flip-feature-icon">🍎</div>
+                                    <span>Meal Logging</span>
+                                </div>
+                                <div class="flip-feature">
+                                    <div class="flip-feature-icon">📈</div>
+                                    <span>Calorie Tracking</span>
+                                </div>
+                                <div class="flip-feature">
+                                    <div class="flip-feature-icon">🥗</div>
+                                    <span>Nutrition Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="IMG_8102.JPG" alt="Plates Logo" class="footer-logo-image">
+                    <span class="logo-text">Plates</span>
+                </div>
+                <p class="footer-tagline">Fitness & Meal Tracker - everything you need to track workouts and meals in one app.</p>
+                <button class="footer-download-btn">
+                    <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    Download on the App Store
+                </button>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Plates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to dark
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        body.className = savedTheme === 'dark' ? 'dark-theme' : 'light-theme';
+        
+        // Update theme icon based on current theme
+        function updateThemeIcon() {
+            const isDark = body.classList.contains('dark-theme');
+            const icon = themeToggle.querySelector('.theme-icon path');
+            
+            if (isDark) {
+                // Sun icon for switching to light
+                icon.setAttribute('d', 'M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z');
+            } else {
+                // Moon icon for switching to dark
+                icon.setAttribute('d', 'M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z');
+            }
+        }
+        
+        // Initialize theme icon
+        updateThemeIcon();
+        
+        themeToggle.addEventListener('click', () => {
+            const isDark = body.classList.contains('dark-theme');
+            
+            if (isDark) {
+                body.className = 'light-theme';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.className = 'dark-theme';
+                localStorage.setItem('theme', 'dark');
+            }
+            
+            updateThemeIcon();
+        });
+        
+        // Flip functionality
+        const flipToggle = document.getElementById('flipToggle');
+        const flipCard = document.getElementById('flipCard');
+        const flipToggleImage = document.getElementById('flipToggleImage');
+        const flipToggleText = document.getElementById('flipToggleText');
+        
+        let isFitnessMode = true;
+        
+        flipToggle.addEventListener('click', () => {
+            isFitnessMode = !isFitnessMode;
+            
+            if (isFitnessMode) {
+                // Switch to fitness mode
+                flipCard.style.transform = 'rotateY(0deg)';
+                flipToggleImage.src = 'IMG_8103.JPG';
+                flipToggleText.textContent = 'Fitness Mode';
+            } else {
+                // Switch to meals mode
+                flipCard.style.transform = 'rotateY(180deg)';
+                flipToggleImage.src = 'IMG_8104.JPG';
+                flipToggleText.textContent = 'Meals Mode';
+            }
+        });
+        
+        // Typing animation
+        const typingText = document.getElementById('typingText');
+        const text = 'Plates';
+        let index = 0;
+        let isDeleting = false;
+        let isWaiting = false;
+        
+        function typeText() {
+            if (!isWaiting) {
+                if (!isDeleting && index < text.length) {
+                    // Typing forward
+                    typingText.innerHTML = text.substring(0, index + 1) + '<span class="typing-cursor"></span>';
+                    index++;
+                    setTimeout(typeText, 150);
+                } else if (!isDeleting && index === text.length) {
+                    // Finished typing, wait
+                    isWaiting = true;
+                    setTimeout(() => {
+                        isWaiting = false;
+                        isDeleting = true;
+                        typeText();
+                    }, 2000);
+                } else if (isDeleting && index > 0) {
+                    // Backspacing
+                    typingText.innerHTML = text.substring(0, index - 1) + '<span class="typing-cursor"></span>';
+                    index--;
+                    setTimeout(typeText, 100);
+                } else if (isDeleting && index === 0) {
+                    // Finished backspacing, start typing again
+                    isDeleting = false;
+                    setTimeout(typeText, 500);
+                }
+            }
+        }
+        
+        // Start typing animation
+        setTimeout(typeText, 1000);
+    </script>
+</body>
+</html>

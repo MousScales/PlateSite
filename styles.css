@@ -1,0 +1,780 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Dark Theme (Default) */
+.dark-theme {
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+.dark-theme .header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+.dark-theme .logo-text {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.dark-theme .hero {
+    background: #1a1a1a;
+}
+
+.dark-theme .hero-title {
+    color: #ffffff;
+}
+
+.dark-theme .hero-subtitle {
+    color: #ccc;
+}
+
+.dark-theme .hero-tagline {
+    color: #ffffff;
+}
+
+.dark-theme .phone-screen {
+    background: #f5f5dc;
+}
+
+.dark-theme .phone-app-title {
+    color: #1a1a1a;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .features {
+    background: #1a1a1a;
+}
+
+.dark-theme .features-title {
+    color: #ffffff;
+}
+
+.dark-theme .feature {
+    background: #2a2a2a;
+    border: 1px solid #333;
+}
+
+.dark-theme .feature:hover {
+    background: #333;
+}
+
+.dark-theme .feature h3 {
+    color: #ffffff;
+}
+
+.dark-theme .feature p {
+    color: #ccc;
+}
+
+.dark-theme .footer {
+    background: #0f0f0f;
+}
+
+/* Light Theme */
+.light-theme {
+    color: #333;
+    background-color: #ffffff;
+}
+
+.light-theme .header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.light-theme .logo-text {
+    color: #1a1a1a;
+    font-size: 28px;
+}
+
+.light-theme .hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.light-theme .hero-title {
+    color: #1a1a1a;
+}
+
+.light-theme .hero-subtitle {
+    color: #666;
+}
+
+.light-theme .hero-tagline {
+    color: #1a1a1a;
+}
+
+.light-theme .phone-screen {
+    background: #1a1a1a;
+}
+
+.light-theme .phone-app-title {
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+.light-theme .features {
+    background: #ffffff;
+}
+
+.light-theme .features-title {
+    color: #1a1a1a;
+}
+
+.light-theme .feature {
+    background: #f8f9fa;
+}
+
+.light-theme .feature:hover {
+    transform: translateY(-5px);
+}
+
+.light-theme .feature h3 {
+    color: #1a1a1a;
+}
+
+.light-theme .feature p {
+    color: #666;
+}
+
+.light-theme .footer {
+    background: #1a1a1a;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: transparent;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: #ffd700;
+    color: #1a1a1a;
+    transform: scale(1.1);
+}
+
+.theme-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.download-btn {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #1a1a1a;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Hero Section */
+.hero {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.hero-tagline {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.app-store-btn {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #1a1a1a;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
+.app-store-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4);
+}
+
+.apple-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Phone Mockup */
+.hero-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-mockup {
+    width: 320px;
+    height: 640px;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    border-radius: 45px;
+    padding: 8px;
+    position: relative;
+    box-shadow: 
+        0 25px 80px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: rotateY(-15deg) rotateX(15deg);
+    transition: transform 0.3s ease;
+    border: 2px solid #333;
+}
+
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+.phone-mockup::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.phone-mockup:hover {
+    transform: rotateY(-10deg) rotateX(10deg);
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    padding-top: 120px;
+}
+
+/* App Content in Phone */
+.app-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-logo-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.phone-app-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    background-color: currentColor;
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Features Section */
+.features {
+    padding: 100px 0;
+}
+
+.features-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+    line-height: 1.2;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.feature {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.feature p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Flip Toggle Button */
+.flip-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.flip-toggle {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.flip-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4);
+}
+
+.flip-toggle-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.flip-toggle-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.flip-toggle-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Flip Container */
+.flip-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.flip-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.fitness-side {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    border: 1px solid #333;
+}
+
+.meals-side {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    border: 1px solid #333;
+    transform: rotateY(180deg);
+}
+
+.flip-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-main-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.flip-content {
+    flex: 1;
+    color: white;
+}
+
+.flip-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.flip-description {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.flip-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.flip-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.flip-feature:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.flip-feature-icon {
+    font-size: 24px;
+}
+
+.flip-feature span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Light theme flip styles */
+.light-theme .fitness-side,
+.light-theme .meals-side {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 1px solid #e0e0e0;
+}
+
+.light-theme .flip-content {
+    color: #1a1a1a;
+}
+
+.light-theme .flip-title {
+    color: #1a1a1a;
+}
+
+.light-theme .flip-description {
+    color: #666;
+}
+
+.light-theme .flip-feature {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .flip-feature:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .flip-feature span {
+    color: #1a1a1a;
+}
+
+/* Footer */
+.footer {
+    color: white;
+    padding: 80px 0 40px;
+}
+
+.footer-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.footer-logo-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-logo .logo-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-tagline {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-download-btn {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #1a1a1a;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
+.footer-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    color: #999;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-tagline {
+        font-size: 32px;
+    }
+    
+    .features-title {
+        font-size: 36px;
+    }
+    
+    .phone-mockup {
+        width: 250px;
+        height: 500px;
+        transform: none;
+    }
+    
+    .phone-mockup:hover {
+        transform: none;
+    }
+    
+    .app-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-tagline {
+        font-size: 24px;
+    }
+    
+    .features-title {
+        font-size: 28px;
+    }
+    
+    .phone-mockup {
+        width: 200px;
+        height: 400px;
+        transform: none;
+    }
+    
+    .phone-mockup:hover {
+        transform: none;
+    }
+    
+    .app-logo {
+        width: 80px;
+        height: 80px;
+    }
+}
